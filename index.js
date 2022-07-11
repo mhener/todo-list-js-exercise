@@ -1,24 +1,18 @@
-// Arrays to keep track of each task's state
-const taskTitles = [];
-const taskComplete = [];
-const taskDescription = [];
-
-
 function newTask(title, description) {
   const task = {
     title: title,
     description: description,
     complete: false,
 
-   logState: function () {
+    logState: function() {
       console.log(`${task.title} has${task.complete ? " " : " not "}been completed`);
     },
-    markCompleted: function (){
+    markCompleted: function() {
       task.complete = true;
     }
-  }
+  };
   return task;
-};
+}
 
 // DRIVER CODE BELOW
 
